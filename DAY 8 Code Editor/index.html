@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor Online</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- hint lia -->
+    
+    <script src="https://kit.fontawesome.com/50073606bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <div class="container">
+
+        <div class="left">
+            <label><i class="fa-brands fa-html5" style="color: orange;"></i> HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-css3-alt" style="color: rgb(159, 159, 247);"></i> CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-square-js" style="color: yellow;"></i> JS</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+
+        </div>
+
+        <div class="right">
+            <label><i class="fa-solid fa-play fa-fade" style="color: #ffffff;"></i> Output</label>
+            <iframe id="output"></iframe>
+        </div>
+
+    </div>
+
+
+   
+    <script src="./script.js"></script>
+</body>
+</html>
